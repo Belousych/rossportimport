@@ -1,0 +1,18 @@
+.nav-main {
+	&__list {
+		.list;
+		margin: 0 -5px;
+		text-transform: uppercase;
+	}
+	&__item {
+		.inblock(baseline);
+		margin: 5px 5px;
+		&.active, &:hover {
+			color: #000;
+		}
+	}
+	&__link {
+		color: inherit !important;
+		text-decoration: none;
+	}
+}
