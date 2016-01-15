@@ -1,0 +1,32 @@
+.lang {
+	&__txt {
+		font-size: 13px;
+		.font1_l;
+		color: #999;
+		font-style: italic;
+		.inblock(baseline);
+	}
+	&__list {
+		color: #fff;
+		.list;
+		.inblock(baseline);
+		li {
+			.inblock(baseline);
+			&:before {
+				content: '/';
+			}
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+			&.active, &:hover {
+				color: #fff;
+				a {
+					color: inherit;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

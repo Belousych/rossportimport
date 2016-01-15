@@ -42,18 +42,39 @@
 	</div>
 	<div class="header__bottom">
 		<div class="b-container-content">
-			<div class="uk-clearfix">
-				<div class="uk-float-left">
+			<div class="uk-flex uk-flex-middle uk-flex-space-between uk-flex-wrap">
+				<div class="">
 					<a href="./" class="logo"><img src="./img/logo.png" alt=""></a>
 				</div>
-				<div class="uk-float-right">
+				<div class="">
 					<div class="lang">
 						<span class="lang__txt">Выберите язык:</span>
-						<span class="lang" data-uk-switcher>
-							<span>EN</span>
-							<span>RU</span>
-						</span>
+						<ul class="lang__list">
+							<li class="active">
+								<a href="javascript:void(0);">EN</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">RU</a>
+							</li>
+						</ul>
 					</div>
+				</div>
+			</div>
+			<div class="uk-flex uk-flex-middle uk-flex-space-between uk-flex-wrap">
+				<div class="search uk-form">
+					<form action="">
+						<input type="text" placeholder="Поиск по сайту">
+						<div data-uk-dropdown>
+
+    <!-- This is the element toggling the dropdown -->
+    <div>dfdf</div>
+
+    <!-- This is the dropdown -->
+    <div class="uk-dropdown">.dfdfdfd.</div>
+
+</div>
+						<button class="uk-button">Найти</button>
+					</form>
 				</div>
 			</div>
 		</div>
