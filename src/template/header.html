@@ -4,6 +4,7 @@
 			<div class="uk-clearfix">
 				<nav class="nav-main uk-float-left">
 					<ul class="nav-main__list">
+						<li></li>
 						<li class="nav-main__item active">
 							<a href="#" class="nav-main__link">Главная</a>
 						</li>
@@ -64,17 +65,60 @@
 				<div class="search uk-form">
 					<form action="">
 						<input type="text" placeholder="Поиск по сайту">
-						<div data-uk-dropdown>
+						<div class="uk-button-dropdown "  data-uk-dropdown="{mode:'click'}">
 
-    <!-- This is the element toggling the dropdown -->
-    <div>dfdf</div>
+						
+									<!-- This is the element toggling the dropdown -->
+								<div class="uk-button-group">
+									<a href="#" class="uk-button">
+										Выберите раздел
+									</a>
+									<div class="uk-button">
+										<i class="uk-icon-angle-down"></i>
+									</div>
+								</div>
+								
+								<!-- This is the dropdown -->
+								<div class="uk-dropdown">
+									<div class="uk-margin-small">
+										<label for="check-all" class="check">
+											<input type="checkbox" id="check-all">
+											<span>По всему сайту</span>
+										</label>
+									</div>
+									<div class="uk-margin-small">
+										<label for="check-2" class="check">
+											<input type="checkbox" id="check-2">
+											<span>В каталоге</span>
+										</label>
+									</div>
+									<div class="uk-margin-small">
+										<label for="check-3" class="check">
+											<input type="checkbox" id="check-3">
+											<span>В статьях</span>
+										</label>
+									</div>
+									<div class="uk-margin-small">
+										<label for="check-4" class="check">
+											<input type="checkbox" id="check-4">
+											<span>В видеоматериалах</span>
+										</label>
+									</div>
+								</div>
+						
 
-    <!-- This is the dropdown -->
-    <div class="uk-dropdown">.dfdfdfd.</div>
-
-</div>
+						</div>
 						<button class="uk-button">Найти</button>
 					</form>
+				</div>
+				<div class="head-feedback">
+					<div class="uk-display-inline-block">
+						<div class="head-feedback__txt">Возникли вопросы? Позвоните нам</div>
+						<div class="head-feedback__phone"><i class="ico ico_phone"></i><span>+7 (343) 345-56-67</span></div>
+					</div>
+					<div class="uk-display-inline-block">
+						<a href="javascript:void(0);" class="uk-button">Напишите нам</a>
+					</div>
 				</div>
 			</div>
 		</div>

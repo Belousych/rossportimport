@@ -362,7 +362,7 @@ textarea {
     margin: 0 auto;
     .clearfix;
     max-width: @max-width;
-    padding: 0 115px; 
+    padding: 0 20px; 
 }
 // Общие пиновые положения для сайта
 article, aside, footer, header, hgroup, main, nav, section {
@@ -373,7 +373,7 @@ body {margin:0;  padding:0;  word-wrap: break-word; //чтобы длиные с
 	
 }
 #mainWrapper, #footer, #header, body {}
-html, body {height:100%;  background: #fff;}
+html, body {height:100%;  background: #fff; font-size: 14px; .font1_l; line-height: 1.2;}
 
 
 
@@ -390,7 +390,11 @@ ol, ul {
     /*list-style-position: inside;*/// раскомментить если надо чтобы текст обтекал маркер
 }
 
-
+.px-to-rem(@px: 14){
+	@remval: @px/14;
+	font-size: ~"@{px}px";
+	font-size: ~"@{remval}rem";
+}
 /*MAIN*/
 .mainWrapper {margin:0 auto; min-height:100%; position:relative; text-align:left; overflow: hidden;}
 /*//MAIN*/
@@ -403,4 +407,13 @@ ol, ul {
 
 .list {
 	padding: 0; margin: 0; list-style: none;
+}
+
+
+.title {
+	text-transform: uppercase;
+	.font1_l;
+	font-size: 36px;
+	line-height: normal;
+	margin-bottom: 35px;
 }

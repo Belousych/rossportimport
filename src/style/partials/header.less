@@ -1,4 +1,5 @@
 .header {
+	flex-shrink: 0;
 	&__top {
 		background: #1a7cc7;
 		color: #fff;
@@ -25,10 +26,24 @@
 	
 	&__bottom {
 		background: #191919;
+		color: #999999;
+		font-size: 13px;
 	}
 }
 
 .logo {
 	margin: 3px 0;
 	display: block;
+}
+
+.head-feedback {
+	margin: 0 -5px;
+	& > div {
+		.inblock(middle);
+		margin: 5px;
+	}
+	&__phone {
+		color: #fff;
+		font-size: 20px;
+	}
 }
