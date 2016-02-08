@@ -1,0 +1,31 @@
+.catalog-filter-sector {
+	.font1_l;
+	font-style: italic;
+	margin: 25px 0;
+	&__list {
+		background: @col-primary;
+		color: #fff;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		
+	}
+	&__item {
+		.inblock(baseline);
+		margin: 15px;
+	}
+	
+	.check {
+		span {
+			&:before {
+				background-image: url('@{img_bg}check-2.png');
+			}
+		}
+		
+		input:checked {
+			& + span {
+				text-decoration: underline;
+			}
+		}
+	}
+}

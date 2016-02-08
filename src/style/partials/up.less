@@ -1,0 +1,40 @@
+.up-spy {
+	position: absolute;
+	top: 0%;
+	height: 150%;
+	width: 10px;
+	height: 10px;
+	display: block;
+	&.up-visible {
+		& + .up {
+			right: 10px;
+		}
+	}
+}
+.up {
+	.animated-css3(all);
+	position: fixed;
+	right: 10px;
+	right: -100px;
+	bottom: 60px;
+	text-align: center;
+	text-decoration: none;
+	z-index: 100;
+	&:hover {
+		text-decoration: none;
+	}
+	&__txt {
+		color: #fff;
+		background: #f5a409;
+		display: block;
+		text-transform: uppercase;
+		.font1_l;
+		font-size: 15px;
+		padding: 4px 20px;
+	}
+	&__ico {
+		display: block;
+		color: #f5a409;
+		font-size: 40px;
+	}
+}

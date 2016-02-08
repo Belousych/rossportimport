@@ -1,0 +1,40 @@
+.slider-logo {
+	background: #000;
+	background: rgba(0,0,0,0.73);
+	height: 75px;
+	margin-top: -75px;
+	position: relative;
+	z-index: 10;
+//	padding: 20px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&__wrap {
+		max-width: 960px;
+		padding: 20px 60px;
+		margin: 0 auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&__item {
+			
+		img {
+			margin: 0 10px;
+			display: block;
+		}
+		
+	}
+	.uk-slidenav {
+		display: block !important;
+		opacity: 1;
+		color: #fff;
+		margin-top: -33px;
+		&.uk-slidenav-previous {
+			left: 0;
+		}
+		&.uk-slidenav-next {
+			right: 0;
+		}
+	}
+}

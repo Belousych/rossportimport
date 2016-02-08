@@ -1,0 +1,49 @@
+.team {
+	text-align: center;
+	&__item {
+		.inblock();
+		position: static;
+		margin-bottom: 10px;
+		.animated-css3(all);
+		&:hover, &.active  {
+			
+				.team__img {
+					filter: grayscale(0%);
+					outline: 10px solid @col-primary;
+				}
+			
+		}
+	}
+	&__img {
+//		width: 337px;
+//		height: 337px;
+		filter: grayscale(100%);
+	}
+	&__txt {
+		visibility: hidden;
+		background: @col-primary;
+		color: #fff;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		left: -9999px;
+	}
+	&__content {
+		padding-top: 70px;
+		padding-bottom: 50px;
+		text-align: justify;
+	}
+	
+	&__name {
+		text-align: center;
+		font-size: 20px;
+		text-transform: uppercase;
+		.font1_m;
+	}
+	&__post {
+		text-align: center;
+		.font1_l;
+		font-style: italic;
+	}
+}

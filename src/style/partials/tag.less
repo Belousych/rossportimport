@@ -1,0 +1,34 @@
+.tag-list {
+	margin-left: -5px;
+	margin-right: -5px;
+	padding: 0;
+	font-style: none;
+}
+.tag {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-style: normal;
+	.font1_m;
+	.inblock(baseline);
+	color: #fff !important;
+	padding: 5px 10px;
+	background: #55606e;
+	text-decoration: none !important;
+	margin: 5px;
+	&:hover {
+		background: #6d7682;
+	}
+	&__ico {
+		.animated-css3(all);
+		margin-left: 5px;
+	}
+	&_extended {
+		cursor: pointer;
+	}
+	&.active {
+		background: #f5a409;
+		.tag__ico {
+			transform: rotate(-45deg);
+		}
+	}
+}

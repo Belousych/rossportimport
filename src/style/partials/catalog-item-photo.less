@@ -1,0 +1,28 @@
+.catalog-item-photo {
+	text-align: center;
+	margin: 0 auto;
+	&__big {
+		background: #f1f1f1;
+		width: 306px;
+		height: 306px;
+		overflow: hidden;
+		position: relative;
+		margin: 0 auto;
+		img {
+			margin: auto;
+			display: block;
+		}
+	}
+	&__list {
+		margin: 5px -3px;
+		.inblock();
+	}
+	&__mini {
+		.inblock(top);
+		width: 97px;
+		height: 97px;
+		background: #f1f1f1;
+		overflow: hidden;
+		margin: 3px;
+	}
+}

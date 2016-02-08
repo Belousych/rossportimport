@@ -1,0 +1,14 @@
+.breadcrumbs {
+	color: @col-primary;
+	.font1_l;
+	font-style: italic;
+	&__link {
+		text-decoration: underline;
+		&:after {
+			display: inline-block;
+			content: '/';
+			margin: 0 5px;
+			text-decoration: none;
+		}
+	}
+}
