@@ -46,6 +46,21 @@
 		opacity: 0;
 		visibility: hidden;
 	}
+	&_bg {
+		
+			span {
+				&:before {
+					background-image: url('@{img_bg}check-2.png');
+				}
+			}
+
+			input:checked {
+				& + span {
+					text-decoration: underline;
+				}
+			}
+		
+	}
 }
 
 .uk-dropdown {

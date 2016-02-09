@@ -2,6 +2,8 @@ $(document).ready(function(){
 	tag();
 	star();
 	teamToggle();
+	checkAll();
+	
 });
 
 var tag = function () {
@@ -64,4 +66,15 @@ var teamToggle = function () {
 			
 		})
 	});
+}
+
+
+var checkAll = function () {
+	var $box = $('.cart-tbl'),
+		$checkboxes = $box.find('input[type="checkbox"]'),
+		$checkTrigger = $('#cart-check-all');
+	
+	$checkTrigger.on('change', function () {
+		$checkboxes.prop("checked", $checkTrigger.prop("checked"));
+	})
 }

@@ -1,0 +1,88 @@
+.title-cart {
+	.font1_m;
+	.p-txt {
+		font-size: 14px;
+		text-transform: none;
+	}
+	
+	h1, .p-txt {
+		.inblock(baseline);
+	}
+	
+	&__price {
+		color: @col-primary;
+	}
+}
+
+.cart-tbl {
+	border: none;
+	td {
+		background: #f6f6f6;
+		border-top: 5px solid #fff;
+		border-bottom: 5px solid #fff;
+	}
+	a {
+		text-decoration: underline;
+		color: #000;
+		&:hover {
+			text-decoration: none;
+			color: @col-primary;
+		}
+	}
+	
+	&__name {
+		text-align: left;
+	}
+	&__price {
+		.font1_m;
+		font-size: 18px;
+		color: @col-primary;
+	}
+	&__footer {
+		background: @col-primary !important;
+		color: #fff;
+		padding: 20px;
+		.font1_m;
+		font-size: 16px;
+		text-align: justify;
+		line-height: 0;
+		& > * {
+			line-height: normal;
+		}
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			font-size: 0;
+		}
+		a {
+			color: inherit !important;
+			text-decoration: underline;
+			
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	
+	&__links {
+		.inblock(middle);
+		text-align: justify;
+		line-height: 0;
+		a {
+			.inblock(middle);
+			line-height: normal;
+			margin: 0 30px;
+			&__first-child {
+				margin-left: 0;
+			}
+		}
+		
+	}
+	&__result {
+		.inblock(middle);
+		text-transform: uppercase;
+		font-size: 30px;
+		
+	}
+}
