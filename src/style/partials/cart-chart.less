@@ -1,0 +1,45 @@
+.cart-chart {
+	background: #f6f6f6;
+	&__top {
+		padding: 10px 0;
+	}
+	&__ico {
+		color: @col-primary;
+		.font1_m;
+		font-size: 18px;
+		padding-left: 99px;
+		position: relative;
+		.inblock(middle);
+		margin-right: 10px;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			left: 0;
+			top: 50%;
+			margin-top: -40px;
+			width: 80px;
+			height: 80px;
+			background: url('@{img_bg}i-chart-on.png') no-repeat;
+		}
+	}
+	&__link {
+		.inblock(middle);
+		color: #000;
+		font-size: 13px;
+		font-style: italic;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__cont {
+		padding: 30px 0;
+	}
+	
+	&.on {
+		.cart-chart__ico {
+			background: url('@{img_bg}i-chart.png') no-repeat;
+		}
+	}
+}

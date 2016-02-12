@@ -6,6 +6,7 @@
 //= ../../bower_components/uikit/js/uikit.js
 //= ../../bower_components/uikit/js/components/slider.js
 //= ../../bower_components/uikit/js/components/lightbox.js
+//= ../../bower_components/Chart.js/Chart.min.js
 
 
 /*
