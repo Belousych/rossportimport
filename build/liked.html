@@ -151,54 +151,93 @@
 			<div class="">
 				<div class="title-cart title title_page">
 					<div class="uk-float-left">
-						<h1>В корзине</h1>
+						<h1>Избранное</h1>
 						<span class="p-txt">(30 товаров)</span>
 					</div>
 					<div class="uk-float-right">
 						<div class="title-cart__price">12 840 <i class="uk-icon-rouble"></i></div> 
 					</div>
 				</div>
-				<div class="cart-chart" id="js-cart-chart">
-					<div class="b-container-content">
-						<div class="cart-chart__top">
-							<div id="cart-chart-trigger" class="uk-display-inline-block" data-uk-toggle="{target:'.js-cart-chart-toggle', animation:'uk-animation-slide-top, uk-animation-slide-bottom'}">
-								<div class="cart-chart__ico">
-									График навыков
+				<div class="liked-filter">
+					<div class="liked-group-list uk-grid uk-grid-width-large-1-4 uk-grid-width-medium-1-2 uk-grid-width-small-1-1">
+						<div class="liked-group-list__item">
+							<div class="liked-group uk-flex uk-flex-column uk-flex-space-between active">
+								<div class="liked-group__top"></div>
+								<div class="liked-group__center">
+									<div class="liked-group__num">01</div>
 								</div>
-								<div class="uk-display-inline-block">
-									<a href="javascript:void(0);" class="cart-chart__link ">Показать график <i class="uk-icon-caret-down"></i></a>
-									<a href="javascript:void(0);" class="uk-hidden cart-chart__link uk-hidden">Скрыть график <i class="uk-icon-caret-up"></i></a>
+								<div class="liked-group__bottom">
+									<a href="javascript:void(0);" class="liked-group__link">Назвать группу</a>
+									<a href="javascript:void(0);" class="liked-group__link">Удалить группу</a>
 								</div>
 							</div>
 						</div>
-						<div class="cart-chart__cont js-cart-chart-toggle ">
-							<div class="uk-grid">
-								<div class="cart-chart__canvas uk-width-4-10">
-									<canvas id="myChart" width="400" height="400"></canvas>
-				
+						<div class="liked-group-list__item">
+							<div class="liked-group uk-flex uk-flex-column uk-flex-space-between">
+								<div class="liked-group__top"></div>
+								<div class="liked-group__center">
+									<div class="liked-group__num">02</div>
 								</div>
-								<div class="cart-chart__right uk-width-6-10">
-									<div class="uk-margin">
-										<div class="cart-chart__title">1 Пункт один</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi suscipit eos illum cupiditate id similique tempora ea inventore vero doloremque obcaecati, praesentium veniam quo minus, at dignissimos soluta, quod.</p>
-									</div>
-									<div class="uk-margin">
-										<div class="cart-chart__title">1 Пункт один</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi suscipit eos illum cupiditate id similique tempora ea inventore vero doloremque obcaecati, praesentium veniam quo minus, at dignissimos soluta, quod.</p>
-									</div>
+								<div class="liked-group__bottom">
+									<a href="javascript:void(0);" class="liked-group__link">Назвать группу</a>
+									<a href="javascript:void(0);" class="liked-group__link">Удалить группу</a>
 								</div>
+							</div>
+						</div>
+						<div class="liked-group-list__item">
+							<div class="liked-group uk-flex uk-flex-column uk-flex-space-between">
+								<div class="liked-group__top"></div>
+								<div class="liked-group__center">
+									<div class="liked-group__name">Super Gum</div>
+								</div>
+								<div class="liked-group__bottom">
+									<a href="javascript:void(0);" class="liked-group__link">Переименовать группу</a>
+									<a href="javascript:void(0);" class="liked-group__link">Удалить группу</a>
+								</div>
+							</div>
+						</div>
+						<div class="liked-group-list__item">
+							<div class="liked-group liked-group_create uk-flex uk-flex-column uk-flex-space-between">
+								<div class="liked-group__top"></div>
+								<div class="liked-group__center">
+									<div class="liked-group__num">+</div>
+									<div class="liked-group__center-txt">Создать новую группу избранного</div>
+								</div>
+								<div class="liked-group__bottom"></div>
 							</div>
 						</div>
 					</div>
+					
+					<form action="">
+						<div class="uk-form liked-filter">
+							<div class="uk-form-row">
+								<label for="liked-filter-check-1" class="check uk-margin-right">
+									<input type="checkbox" id="liked-filter-check-1">
+									<span>Показывать всё избранное</span>
+								</label>
+								<label for="liked-filter-check-2" class="check uk-margin-right">
+									<input type="checkbox" id="liked-filter-check-2">
+									<span>Показывать несортированное</span>
+								</label>
+							</div>
+						</div>
+					</form>
 				</div>
 				
 				<div class="uk-margin-large">
+					<div class="title-cart title title_page">
+						
+							<div>Группа: 01</div>
+							
+						
+						
+					</div>
 					<div class="cart-box">
 						<div class="uk-form">
 							<p class="cart-box__control">
 								<a href="javascript:void(0);">Удалить выбранное</a> /
-								<a href="javascript:void(0);">Перенести в избранное</a> /
-								<a href="javascript:void(0);">Купить выбранное</a> 
+								<a href="javascript:void(0);">Перенести в корзину</a> /
+								<span>Перенести в группу: <a href="#">01</a> <a href="#">02</a> <a href="#">Super Gum</a> <a href="#">Создать новую и перенести</a></span> 
 								
 							</p>
 							<table class="cart-tbl uk-width-1-1 uk-text-center">
