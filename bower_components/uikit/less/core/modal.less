@@ -177,8 +177,11 @@
  ========================================================================== */
 
 .uk-modal-dialog > .uk-close:first-child {
-    margin: -10px -10px 0 0;
+    margin: -25px -25px 0 0;
     float: right;
+	&:hover {
+		color: @button-primary-background;
+	}
 }
 
 /*
@@ -274,8 +277,11 @@
 }
 
 .uk-modal-footer {
+	margin: 0 - @modal-dialog-padding;
+	padding: 30px @modal-dialog-padding;
     margin-top: @modal-footer-margin-top;
     .hook-modal-footer;
+	
 }
 
 /*
