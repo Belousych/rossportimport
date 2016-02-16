@@ -81,6 +81,11 @@ var checkAll = function () {
 	$checkTrigger.on('change', function () {
 		$checkboxes.prop("checked", $checkTrigger.prop("checked"));
 	})
+	
+	$box.find('label.check').click( function(e){
+		e.stopPropagation();
+		
+	});
 }
 
 var cartChartTrigger = function () {

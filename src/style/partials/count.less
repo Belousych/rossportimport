@@ -1,6 +1,7 @@
 .count {
+	min-width: 100px;
 	input {
-		width: 35px;
+		
 		text-align: center;
 		color: @col-primary;
 		.font1;
@@ -10,11 +11,15 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+		background: #fff !important;
+		width: 50px;
+		.inblock(middle);
 	}
 	&__dec, &__inc {
 		font-size: 20px;
 		color: #c6c6c6;
 		cursor: pointer;
+		.inblock(middle);
 		&:hover {
 			color: @col-primary;
 		}

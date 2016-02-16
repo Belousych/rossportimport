@@ -15,7 +15,7 @@
 				</div>
 				<div class="uk-margin-large tabs">
 					<ul class="uk-tab tab-nav" data-uk-tab="{connect:'#tab'}">
-						<li ><a href="#">Личная информация</a></li>
+						<li><a href="#">Личная информация</a></li>
 						<li><a href="#">Адреса доставки</a></li>
 						<li class="uk-active"><a href="#">История заказов</a></li>
 
@@ -171,21 +171,114 @@
 									<form action="">
 										<div class="uk-form-row uk-margin-large">
 											<label for="liked-filter-check-1" class="check uk-margin-right">
-					<input type="checkbox" id="liked-filter-check-1">
-					<span>Показывать активные</span>
-				</label>
-				<label for="liked-filter-check-2" class="check uk-margin-right">
-					<input type="checkbox" id="liked-filter-check-2">
-					<span>Показывать выполненные</span>
-				</label>
+												<input type="checkbox" id="liked-filter-check-1">
+												<span>Показывать активные</span>
+											</label>
+											<label for="liked-filter-check-2" class="check uk-margin-right">
+												<input type="checkbox" id="liked-filter-check-2">
+												<span>Показывать выполненные</span>
+											</label>
 										</div>
 										<p class="cart-box__control">
 											<a href="javascript:void(0);">Повторить заказ</a> /
 											<a href="javascript:void(0);">Перенести товары заказа в корзину</a> /
-											
+
 
 										</p>
-	
+										<table class="cart-tbl uk-width-1-1 uk-text-center table-accord" data-uk-accordion="{showfirst: false}">
+								<col width="100">
+													<col width="120">
+													
+													<col width="120">
+													<col width="150">
+													<col width="150">
+								<tr>
+									<thead>
+										<th><label for="cart-check-all" class="check check_bg"><input type="checkbox" id="cart-check-all"><span>Все</span></label></th>
+										<th>Дата заказа</th>
+										<th>Номер заказа</th>
+										<th>Стоимость</th>
+										<th>Статус заказа</th>
+										
+									</thead>
+								</tr>
+								
+								<tbody >
+									<tr>
+										<td colspan="5" class="uk-padding-remove">
+											<div class="uk-accordion-title">
+												<table >
+													<col width="100">
+													<col width="120">
+													
+													<col width="120">
+													<col width="150">
+													<col width="150">
+													
+													<tr>
+														<td><label for="check-order-1" class="check"><input type="checkbox" id="check-order-1"><span></span></label></td>
+														<td>28.11.2016</td>
+														<td><div class="cart-tbl__code p-txt">
+														002501
+													</div></td>
+														<td><div class="cart-tbl__price">
+														1 240 530 <i class="uk-icon-rouble"></i>
+													</div></td>
+														<td><i>Заказ обрабатывается</i></td>
+													</tr>
+												</table>
+											</div>
+											<div class="uk-accordion-content">
+												<table>
+													<col width="100">
+													<col width="120">
+													<col>
+													<col width="120">
+													<col width="150">
+													<col width="150">
+													<col width="150">
+													<tr >
+																							<td></td>
+																							<td>
+													<div class="cart-tbl__img">
+														<img src="./img/foto-cover.png" alt="" width="102" height="102">
+													</div>
+																							</td>
+																							<td>
+													<div class="cart-tbl__name"><a href="№">Название тренажера или другого товара длинное предлинное название такое</a></div>
+																							</td>
+																							<td>
+													<div class="cart-tbl__code p-txt">
+														002501
+													</div>
+																							</td>
+																							<td>
+													<div class="cart-tbl__brand">
+														<a href="#">Keiser</a>
+													</div>
+																							</td>
+																							<td>
+													<div class="count js-count"> 
+														<div class="uk-icon-minus-square count__dec"></div>
+														<input type="text">
+														<div class="uk-icon-plus-square count__inc"></div>
+													</div>
+																							</td>
+																							<td>
+													<div class="cart-tbl__price">
+														1 240 530 <i class="uk-icon-rouble"></i>
+													</div>
+																							</td>
+																						</tr>
+
+												</table>
+											</div>
+										</td>
+									</tr>
+									
+								</tbody>
+								
+							</table>
 									</form>
 								</div>
 
@@ -200,7 +293,8 @@
 	</div>
 
 
-	//= template/up.html //= template/footer.html
+	//= template/up.html
+	//= template/footer.html
 
 
 	<script src="./js/main.js"></script>
