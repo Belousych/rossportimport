@@ -67,6 +67,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', end
 
 .social {
 	margin: 30px 0;
+	&_mini {
+		margin: 10px 0;
+		.social__link {
+			width: 39px;
+			height: 39px;
+			background-image: url('@{img_bg}s-soc-min.png');
+			&_fb {
+				background-position: 0 0;
+				&:hover {
+					background-position: 0 -48px;
+				}
+			}
+			&_od { 
+				background-position: -48px 0;
+				&:hover {
+					background-position: -48px -48px;
+				}
+			}
+			&_vk {
+				background-position: -96px 0;
+				&:hover {
+					background-position: -96px -48px;
+				}
+			}
+			&_gp {
+				background-position: -144px 0;
+				&:hover {
+					background-position: -144px -48px;
+				}
+			}
+			&_tw {
+				background-position: -192px 0;
+				&:hover {
+					background-position: -192px -48px;
+				}
+			}
+			&_ma {
+				background-position: -192px 0;
+				&:hover {
+					background-position: -192px -48px;
+				}
+			}
+		}
+	}
 	&__txt {
 		color: #666;
 		.font1_l;
