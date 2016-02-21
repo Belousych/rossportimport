@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+	<head lang="ru">
+		<meta charset="UTF-8">
+		<title>РОССПОРТИМПОРТ</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="/favicon.ico">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
+<body>
+	
+	<div class="mainWrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="b-container-content">
+					<div class="uk-clearfix">
+						<nav class="nav-main uk-float-left">
+							<ul class="nav-main__list">
+								<li></li>
+								<li class="nav-main__item active">
+									<a href="#" class="nav-main__link">Главная</a>
+								</li>
+								<li class="nav-main__item">
+									<a href="#" class="nav-main__link">Каталог</a>
+								</li>
+								<li class="nav-main__item">
+									<a href="#" class="nav-main__link">Виды спорта</a>
+								</li>
+								<li class="nav-main__item">
+									<a href="#" class="nav-main__link">О нас</a>
+								</li>
+								<li class="nav-main__item">
+									<a href="#" class="nav-main__link">Статьи</a>
+								</li>
+								<li class="nav-main__item">
+									<a href="#" class="nav-main__link">Видеоматериалы</a>
+								</li>
+								<li class="nav-main__item">
+									<a href="#" class="nav-main__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__top-right uk-float-right">
+							<div class="header__reg-auto">
+								<a href="#modal-reg" data-uk-modal>Регистрация</a> /
+								<a href="#modal-autoriz" data-uk-modal>Войти</a>
+							</div>
+							<div class="header__cart-info">
+								<a href="#">В корзине (30)</a> /
+								<a href="#">Избранное (10)</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="b-container-content">
+					<div class="uk-flex uk-flex-middle uk-flex-space-between uk-flex-wrap">
+						<div class="">
+							<a href="./" class="logo"><img src="./img/logo.png" alt=""></a>
+						</div>
+						<div class="">
+							<div class="lang">
+								<span class="lang__txt">Выберите язык:</span>
+								<ul class="lang__list">
+									<li class="active">
+										<a href="javascript:void(0);">EN</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">RU</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="uk-flex uk-flex-middle uk-flex-space-between uk-flex-wrap">
+						<div class="search uk-form">
+							<form action="">
+								<input type="text" placeholder="Поиск по сайту">
+								<div class="uk-button-dropdown "  data-uk-dropdown="{mode:'click'}">
+		
+								
+											<!-- This is the element toggling the dropdown -->
+										<div class="uk-button-group">
+											<a href="#" class="uk-button">
+												Выберите раздел
+											</a>
+											<div class="uk-button">
+												<i class="uk-icon-angle-down"></i>
+											</div>
+										</div>
+										
+										<!-- This is the dropdown -->
+										<div class="uk-dropdown">
+											<div class="uk-margin-small">
+												<label for="check-all" class="check">
+													<input type="checkbox" id="check-all">
+													<span>По всему сайту</span>
+												</label>
+											</div>
+											<div class="uk-margin-small">
+												<label for="check-2" class="check">
+													<input type="checkbox" id="check-2">
+													<span>В каталоге</span>
+												</label>
+											</div>
+											<div class="uk-margin-small">
+												<label for="check-3" class="check">
+													<input type="checkbox" id="check-3">
+													<span>В статьях</span>
+												</label>
+											</div>
+											<div class="uk-margin-small">
+												<label for="check-4" class="check">
+													<input type="checkbox" id="check-4">
+													<span>В видеоматериалах</span>
+												</label>
+											</div>
+										</div>
+								
+		
+								</div>
+								<button class="uk-button">Найти</button>
+							</form>
+						</div>
+						<div class="head-feedback">
+							<div class="uk-display-inline-block">
+								<div class="head-feedback__txt">Возникли вопросы? Позвоните нам</div>
+								<div class="head-feedback__phone"><i class="ico ico_phone"></i><span>+7 (343) 345-56-67</span></div>
+							</div>
+							<div class="uk-display-inline-block">
+								<a href="#modal-feedback" class="uk-button" data-uk-modal>Напишите нам</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</header>
+		
+		<div class="b-container-content uk-margin-large-bottom">
+			<div class="breadcrumbs uk-margin">
+					<a href="./" class="breadcrumbs__link">Главная</a><span>Каталог товаров</span>
+			</div>
+			
+			<div class="">
+				<div class="title title_page">
+					<h1>Каталог товаров</h1>
+				</div>
+				
+				<div class="catalog-filter-sector uk-form">
+					<p>Выберите интересующие разделы:</p>
+					<form action="">
+						<ul class="catalog-filter-sector__list">
+							<li class="catalog-filter-sector__item">
+								<label for="catalog-filter-sector-1" class="check">
+									<input type="checkbox" id="catalog-filter-sector-1"><span>Нейропсихофизиология</span></label>
+							</li>
+							<li class="catalog-filter-sector__item">
+								<label for="catalog-filter-sector-2" class="check">
+									<input type="checkbox" id="catalog-filter-sector-2"><span>Тренировочные лаборатории</span></label>
+							</li>
+							<li class="catalog-filter-sector__item">
+								<label for="catalog-filter-sector-3" class="check">
+									<input type="checkbox" id="catalog-filter-sector-3"><span>Спортивное тестирование</span></label>
+							</li>
+							<li class="catalog-filter-sector__item">
+								<label for="catalog-filter-sector-4" class="check">
+									<input type="checkbox" id="catalog-filter-sector-4"><span>Тренировочное оборудование</span></label>
+							</li>
+							<li class="catalog-filter-sector__item">
+								<label for="catalog-filter-sector-5" class="check">
+									<input type="checkbox" id="catalog-filter-sector-5"><span>Реабилитация</span></label>
+							</li>
+						</ul>
+					</form>
+				</div>
+				
+				<div class="uk-grid">
+					<div class="uk-width-medium-1-6">
+						<div class="catalog-filter-brand">
+							<p>Выберите бренд:</p>
+							<form action="">
+								<ul class="catalog-filter-brand__list">
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-1" class="check">
+											<input type="checkbox" id="catalog-filter-brand-1"><span>Kaiser</span></label>
+									</li>
+								
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-2" class="check">
+											<input type="checkbox" id="catalog-filter-brand-2"><span>Hi-trainer</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-3" class="check">
+											<input type="checkbox" id="catalog-filter-brand-3"><span>X-force</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-4" class="check">
+											<input type="checkbox" id="catalog-filter-brand-4"><span>Treadwall</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-5" class="check">
+											<input type="checkbox" id="catalog-filter-brand-5"><span>Sprint 1080</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-6" class="check">
+											<input type="checkbox" id="catalog-filter-brand-6"><span>GymAware</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-7" class="check">
+											<input type="checkbox" id="catalog-filter-brand-7"><span>Humotion</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-8" class="check">
+											<input type="checkbox" id="catalog-filter-brand-8"><span>Cantab</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-9" class="check">
+											<input type="checkbox" id="catalog-filter-brand-9"><span>Dinavision</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-10" class="check">
+											<input type="checkbox" id="catalog-filter-brand-10"><span>CogniSens или в две
+								строки</span></label>
+									</li>
+									<li class="catalog-filter-brand__item">
+										<label for="catalog-filter-brand-11" class="check">
+											<input type="checkbox" id="catalog-filter-brand-11"><span>Thought Technology</span></label>
+									</li>
+								</ul>
+							</form>
+						
+						
+						</div>
+					</div>
+					<div class="uk-width-medium-5-6">
+						<div class="catalog-result-search-info">
+							<div class="catalog-result-search-info__extended uk-hidden">
+								<div class="extended-filter">
+									<div class="extended-filter__block">
+										<p>Вид спорта:</p>
+										<div class="extended-filter__first">
+											<ul class="tag-list">
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Тяжелая атлетика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Фехтование</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Плавание</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Баскетбол</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Бадминдтон</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+											</ul>
+										</div>
+										<p class="extended-filter__more">
+											<a href="#" class="">Выбрать из полного списка </a>
+											<i class="uk-icon-caret-down"></i>
+										</p>
+									</div>
+									<div class="extended-filter__block">
+										<p>Кондиции:</p>
+										<ul class="tag-list">
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Тяжелая атлетика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Фехтование</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Плавание</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Баскетбол</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Бадминдтон</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+												<li class="tag tag_extended js-tag">
+													<span class="tag__name">Акробатика</span>
+													<span class="tag__lenght">(2)</span>
+													<i class="tag__ico uk-icon-plus"></i>
+												</li>
+											</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="uk-flex uk-flex-middle uk-flex-wrap uk-flex-space-between">
+								<div class="">
+									По вашим параметрам найдено <b class="uk-text-primary">27 товаров</b>
+								</div>
+								<div class="">
+									<span id="js-toggle-extended" data-uk-toggle="{target:'.catalog-result-search-info__extended, #js-toggle-extended, #js-toggle-extended-2', animation:'uk-animation-slide-left, uk-animation-slide-bottom'}">Для более точного результата воспользуйтесь <a href="javascript:void(0);">Расширенным поиском <i class="uk-icon-caret-down"></i></a></span>
+									<a href="javascript:void(0);" class="uk-hidden" id="js-toggle-extended-2" data-uk-toggle="{target:'.catalog-result-search-info__extended, #js-toggle-extended, #js-toggle-extended-2', animation:'uk-animation-slide-left, uk-animation-slide-right'}">Свернуть дополнительные параметры <i class="uk-icon-caret-up"></i></a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="catalog-search-not-result uk-flex uk-flex-column uk-flex-center">
+						    <div class="">
+						        <div class="catalog-search-not-result__txt">
+						            Упс! Товары не найдены. Пожалуйста, измените условия поиска.
+						        </div>
+						    </div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="up-spy up-visible" data-uk-scrollspy="{cls:'up-visible', repeat: true}"></div>
+	<a href="#" class="up" data-uk-smooth-scroll="">
+		<i class="up__ico uk-icon-angle-double-up"></i>
+		<span class="up__txt">Наверх</span>
+	</a>
+	
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="b-container-content">
+				<p>
+					<a href="#"><img src="./img/logo.png" alt=""></a>
+				</p>
+				<ul class="footer-nav">
+					<li class="footer-nav__item">
+						<a href="#" class="footer-nav__link">Каталог</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="#" class="footer-nav__link">Виды спорта</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="#" class="footer-nav__link">О нас</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="#" class="footer-nav__link">Статьи</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="#" class="footer-nav__link">Видеоматериалы</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="#" class="footer-nav__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-sector">
+				<div class="b-container-content">
+					<a href="#" class="footer-sector__item">Нейропсихофизиология</a>
+					<a href="#" class="footer-sector__item">Тренировочные лаборатории</a>
+					<a href="#" class="footer-sector__item">Спортивное тестирование</a>
+					<a href="#" class="footer-sector__item">Тренировочное оборудование</a>
+					<a href="#" class="footer-sector__item">Реабилитация</a>
+				</div>
+			</div>
+			<div class="uk-margin">
+				<p>Общество с ограниченной ответственностью “РосСпортИмпорт"</p>
+				
+				<p>198206, Г Санкт-Петербург <br>
+					ул. Пионерстроя,14 ; корпус 2;  кв.84</p>
+			</div>
+		
+		<div class=" footer__phone"><i class="ico ico_phone"></i><span>+7 (343) 345-56-67</span></div>
+			<div class="footer__btn">
+				<a href="javascript:void(0);" class="uk-button">НАПИШИТЕ НАМ</a>
+			</div>
+			
+			<div class="social">
+				<div class="social__txt">Мы в социальных сетях:</div>
+				<a href="#" class="social__link social__link_fb"></a>
+				<a href="#" class="social__link social__link_od"></a>
+				<a href="#" class="social__link social__link_vk"></a>
+				<a href="#" class="social__link social__link_gp"></a>
+				<a href="#" class="social__link social__link_tw"></a>
+				<a href="#" class="social__link social__link_ma"></a>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="b-container-content">
+				(С) Все права защищены,2015
+			</div>
+		</div>
+	</footer>
+	
+	
+		<div id="modal-feedback" class="uk-modal modal">
+			<form action="" class="uk-form form">
+				<div class="uk-modal-dialog">
+		
+					<a class="uk-modal-close uk-close"></a>
+					<div class="modal-title">Напишите нам</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="ФИО" type="text">
+					</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="Контактный телефон" type="text">
+					</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="E-mail" type="text">
+					</div>
+					<div class="uk-form-row">
+						<textarea name="" id="" cols="30" rows="5" class="uk-width-1-1" placeholder="Ваше сообщение"></textarea>
+					</div>
+					<div class="uk-modal-footer uk-text-center">
+						<button type="submit" class="uk-button">Отправить сообщение</button>
+					</div>
+		
+				</div>
+			</form>
+		</div>
+		
+		
+		
+		
+		<div id="modal-reg" class="uk-modal modal">
+			<form action="" class="uk-form form">
+				<div class="uk-modal-dialog">
+		
+					<a class="uk-modal-close uk-close"></a>
+					<div class="modal-title">Регистрация</div>
+					<div class="uk-margin uk-text-center">
+						<div>Зарегестрироваться через соц.сеть</div>
+						<div class="social social_mini">
+							<a href="#" class="social__link social__link_fb"></a>
+							<a href="#" class="social__link social__link_od"></a>
+							<a href="#" class="social__link social__link_vk"></a>
+							<a href="#" class="social__link social__link_gp"></a>
+							<a href="#" class="social__link social__link_tw"></a>
+							<a href="#" class="social__link social__link_ma"></a>
+						</div>
+					</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="ФИО" type="text">
+					</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="E-mail" type="text">
+					</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="Придумайте пароль" type="password">
+					</div>
+					<div class="uk-modal-footer uk-text-center">
+						<button type="submit" class="uk-button">Зарегистрироваться</button>
+					</div>
+		
+				</div>
+			</form>
+		</div>
+		
+		
+		
+		
+		<div id="modal-autoriz" class="uk-modal modal">
+			<form action="" class="uk-form form">
+				<div class="uk-modal-dialog">
+		
+					<a class="uk-modal-close uk-close"></a>
+					<div class="modal-title">Войти</div>
+					<div class="uk-margin uk-text-center">
+						<div>Войти через соц.сеть</div>
+						<div class="social social_mini">
+							<a href="#" class="social__link social__link_fb"></a>
+							<a href="#" class="social__link social__link_od"></a>
+							<a href="#" class="social__link social__link_vk"></a>
+							<a href="#" class="social__link social__link_gp"></a>
+							<a href="#" class="social__link social__link_tw"></a>
+							<a href="#" class="social__link social__link_ma"></a>
+						</div>
+					</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="E-mail" type="text">
+					</div>
+					<div class="uk-form-row">
+						<input class="uk-width-1-1" placeholder="Пароль" type="password">
+					</div>
+					<div class="uk-modal-footer uk-text-center">
+						<button type="submit" class="uk-button">Войти</button>
+					</div>
+		
+				</div>
+			</form>
+		</div>
+		
+		
+		
+		
+		<div id="modal-thanks" class="uk-modal modal">
+			
+				<div class="uk-modal-dialog">
+		
+					<a class="uk-modal-close uk-close"></a>
+					<div class="modal-title">Спасибо</div>
+					<div class="uk-margin uk-text-center">
+						Вы успешно зарегистрированы! Письмо с ссылкой активации отправлено на указанный E-mail
+						
+					</div>
+					
+					
+					<div class="uk-modal-footer uk-text-center">
+						<button type="submit" class="uk-button uk-modal-close">Закрыть окно</button>
+					</div>
+		
+				</div>
+			
+		</div>
+	
+
+	<script src="./js/main.js"></script>
+	
+</body>
+
+</html>
