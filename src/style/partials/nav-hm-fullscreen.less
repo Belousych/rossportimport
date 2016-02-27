@@ -9,7 +9,7 @@
 	&__grid {
 		align-items: stretch;
 //		height: 100%;
-		
+		width: 100%;
 	}
 	&__item {
 		background-repeat: no-repeat;
@@ -64,6 +64,8 @@
 		transform: skewX(10deg);
 		background-repeat: no-repeat;
 		background-position: top  center;
+        -webkit-background-size: cover;
+        background-size: cover;
 		&:after {
 			content: '';
 			display: block;
