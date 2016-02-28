@@ -3,11 +3,12 @@ $(document).ready(function () {
     star();
     teamToggle();
     checkAll();
-    cartChartTrigger();
-
-
-    chart();
     countCart();
+    
+    photo();
+    cartChartTrigger();
+    chart();
+    
 });
 
 var tag = function () {
@@ -253,3 +254,20 @@ var countCart = function () {
 
     });
 }
+
+
+var photo = function () {
+    var $photoBox = $('#js-photo'),
+        $big = $photoBox.find('.catalog-item-photo__big a'),
+        $bigImg = $photoBox.find('.catalog-item-photo__big img'),
+        $mini = $photoBox.find('.catalog-item-photo__mini');
+    $mini.on('click', function(e) {
+       var $this = $(this),
+           index = $this.index(),
+           href = $this.find('img').data('href');
+        $big.removeClass('active')  ;
+        $big.eq(index).addClass('active');
+        $bigImg.prop('src', href);
+        return false;
+    });
+};
