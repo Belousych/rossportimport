@@ -4,13 +4,20 @@ $(document).ready(function () {
     teamToggle();
     checkAll();
     countCart();
-    
+
     photo();
     cartChartTrigger();
-    chart();
-    
-});
 
+
+    mobileTbl();
+
+
+    chart();
+});
+var mobileTbl = function () {
+    var $tbl = $('table');
+    $tbl.wrap('<div class="tbl-wrap"></div>');
+}
 var tag = function () {
     var $tag = $('.js-tag');
     $tag.on('click', function () {
@@ -214,9 +221,9 @@ var countCart = function () {
             return false;
         }
     });
-    
-    
-    
+
+
+
     function getChar(event) {
         if (event.which == null) {
             if (event.keyCode < 32) return null;
@@ -239,7 +246,7 @@ var countCart = function () {
             val = parseInt($this.find('input').val());
 
         if ($target.hasClass('count__dec')) {
-            
+
             if (val <=0) {
                 return false;
             } else {
